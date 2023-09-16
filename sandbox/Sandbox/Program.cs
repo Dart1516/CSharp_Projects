@@ -32,7 +32,7 @@ class Program
         Console.WriteLine("if we only write git commit it will give an error and in order to scape we should write:");
         Console.WriteLine(":q!");
         Console.WriteLine("soi to commit something we should write:");
-        Console.WriteLine("git commit -m (follow by phrase)");
+        Console.WriteLine("git commit -m  (follow by phrase)");
         Console.WriteLine("");
         Console.WriteLine("GIT PUSH");
         Console.WriteLine("when we want to save the change on github we should use:");
@@ -43,7 +43,7 @@ class Program
         Console.WriteLine("git add.");
         Console.WriteLine("git commit-m 'one last line' ");
         Console.WriteLine("");
-        Console.WriteLine("");
+        Console.WriteLine("Remember, you can do all of this by VS CODE ");
         Console.WriteLine("");
 
         
