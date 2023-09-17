@@ -8,7 +8,7 @@ class Program
         //string answer1 = Console.ReadLine();
         //int secret_number = int.Parse(answer1);
         
-        Console.WriteLine("Wellcome to this game where do you have to guess a number between 1 - 100");
+        Console.WriteLine("Well come to this game where do you have to guess a number between 1 - 100");
         Console.WriteLine("we wish you good luck");
         Console.WriteLine("");
 

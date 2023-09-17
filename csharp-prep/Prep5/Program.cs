@@ -7,7 +7,7 @@ class Program
         WelcomeMessage();
 
         string nombre = PedirNombre(); //como devuelve un string podemos usarla como una variable
-        int numero = PedirNumero(); // como es un int entonces podemos usarla como una varibale
+        int numero = PedirNumero(); // como es un int entonces podemos usarla como una variable
         int numero_al_cuadrado = ToSquere(numero);
         DisplayResult(nombre, numero_al_cuadrado);
         
@@ -15,13 +15,13 @@ class Program
 
     
     //DisplayWelcome - Displays the message, Welcome to the Program!
-    static void WelcomeMessage() // no se declara ningun tipo (int, string) porque solo vamos a imprimir un mensaje, OJO solo aca
+    static void WelcomeMessage() // no se declara ningún tipo (int, string) porque solo vamos a imprimir un mensaje, OJO solo aca
     { 
     Console.WriteLine("Welcome to the program!");
     }
 
     //"PromptUserName - Asks for and returns the user's name (as a string)"
-    static string PedirNombre() // Se usa string porque vamnos a devolver una variable
+    static string PedirNombre() // Se usa string porque vamos a devolver una variable
     {
         Console.WriteLine("Please enter your name: ");
         string entered_name = Console.ReadLine();
