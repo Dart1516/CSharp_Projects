@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
 
-// ESTEP 2 Start the Project
+// STEP 2 Start the Project
 // Open the class project in VS Code.
 // Navigate to the Learning02 project in the prepare folder. Find the Program.cs file, which will be your entry point for the program.
 // Verify that you can run the project and see the beginning "Hello World" output.
