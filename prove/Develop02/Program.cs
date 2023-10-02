@@ -28,7 +28,7 @@ do
     Console.WriteLine("1._ Write a new entry");
     Console.WriteLine("2._ Display currents entries");
     Console.WriteLine("3._ Delete currents entries");
-    Console.WriteLine("4._ Load an display older Entries");
+    Console.WriteLine("4._ Load Entries from a file");
     Console.WriteLine("5._ Save entries in a journal");
     Console.WriteLine("6._ Quit");
     Console.WriteLine("");
@@ -57,21 +57,45 @@ do
 
     else if (my_choice == "2")
     {
-        if (list_to_store_temporarily_my_entries.Count < 1)
-        {
-            Console.WriteLine("I'm sorry, you don't have any entry yet.");
-            Console.WriteLine("Do you want to do something else?: ");
+                if (list_to_store_temporarily_my_entries.Count < 1)
+                    {
+                    Console.WriteLine("I'm sorry, you don't have any recently entry.");
+                    try
+                    {
+                        Console.WriteLine("But this are the old entries from the load file: ");
+                        to_show_last_entries.DisplayAll();
+                    }
+                    catch (Exception)
+                    {
+                        // Maneja la excepción e imprime un mensaje
+                        Console.WriteLine("There is not any file loaded to show old entries.");
+                        Console.WriteLine("Please load a file or add some entries to display it.");
+                    }
 
-        }
-        else
-        {
-            Console.WriteLine("The entries you have write so fare are: ");
-            foreach (string each_entry in list_to_store_temporarily_my_entries)
-            {
-                Console.WriteLine(each_entry);
-            }
-        }
-        Console.WriteLine("");
+
+                    Console.WriteLine("Do you want to do something else?: ");
+
+                    }
+                else 
+                    {
+                    Console.WriteLine("The entries you have written so fare are: ");
+                    foreach (string each_entry in list_to_store_temporarily_my_entries)
+                        {
+                        Console.WriteLine(each_entry);
+                        }
+                    try
+                    {   
+                        Console.WriteLine("and this are the previous entries from the load file.");
+                        to_show_last_entries.DisplayAll();
+                    }
+                    catch (Exception)
+                    {
+                        // Maneja la excepción e imprime un mensaje
+                        Console.WriteLine("There is not file loaded to show old entries.");
+                        Console.WriteLine("Do you want to do something else?: ");
+                    }
+                    }   
+                Console.WriteLine("");
     }
 
     else if (my_choice == "3")
@@ -89,7 +113,7 @@ do
             validation_loop_on_going = "yes";
             do
             {
-                Console.WriteLine("Do you want to delete all your current entries? (y/n): ");
+                Console.WriteLine("This option wll delete all your current entries that haven't been save, are you sure? (y/n): ");
                 validation_answers = Console.ReadLine()!;
                 if (validation_answers == "y")
                 {//https://www.techiedelight.com/es/delete-all-items-from-a-list-in-csharp/#:~:text=Una%20soluci%C3%B3n%20simple%20y%20directa,Clear()%20m%C3%A9todo.
@@ -117,10 +141,8 @@ do
         {
             to_show_last_entries._my_file = journal_name;
             to_write._my_file = journal_name;
-            to_show_last_entries.DisplayAll();
             Console.WriteLine("");
             Console.WriteLine($"Journal {journal_name} loaded");
-            list_to_store_temporarily_my_entries.Clear();
             Console.WriteLine("Do you want to do something else?: ");
             Console.WriteLine("");
         }

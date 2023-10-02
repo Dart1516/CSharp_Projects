@@ -1,0 +1,16 @@
+--------------------prove.txt--------------------
+24/9/2023 - Who was the most interesting person I interacted with today?
+This is an example
+----------------------------------------
+
+25/09/2023 - How did I see the hand of the Lord in my life today?
+This is another Example
+----------------------------------------
+
+29/9/2023 - Who was the most interesting person I interacted with today?
+I know that the journal load the files
+----------------------------------------
+
+2/10/2023 - Who was the most interesting person I interacted with today?
+This is the last example
+----------------------------------------

@@ -96,7 +96,7 @@ public class Scripture
             {   
                 for (int wordHide = 0; wordHide < 10; wordHide++)
                 {
-                     if (availableIndex.Count == 0)
+                    if (availableIndex.Count == 0)
                     {_IsCompletelyHidden = "yes";
                     setCompletelyHidden("yes");
                         break;
