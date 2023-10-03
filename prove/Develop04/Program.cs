@@ -12,9 +12,8 @@
             input = Console.ReadLine()!;
         }
 
-        Activity a1 = new Activity();
-
-
+        Activity a1 = new Activity(); // To Showing Creativity and Exceeding Requirements I made validate all the entries.
+        
         while(input != "4")
         {
             Menu();
@@ -31,7 +30,7 @@
                 case "2":
                     Console.Clear();
                     ReflectingActivity r1 = new ReflectingActivity("Reflection Activity", "This activity will help ypu reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life");
-                    r1.DisplayStartingMessage();
+                    r1.DisplayStartingMessage(); // and Make sure no random prompts/questions are selected until they have all been used at least once in that session
                     r1.Run();
                     r1.DisplayEndingMessage();
                     break;

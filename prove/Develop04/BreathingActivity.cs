@@ -1,9 +1,8 @@
 public class BreathingActivity : Activity
 {
-
     public BreathingActivity(string ActivityName, string PersonalizedWelcomeMessage): base(ActivityName,PersonalizedWelcomeMessage)
     {
-        
+
     }
     public void Run()
     {   
@@ -13,11 +12,10 @@ public class BreathingActivity : Activity
         DateTime endTime1 = startTime1.AddSeconds(_duration); // declaramos el tiempo final que será 10 segundos luego de comenzar
         while (DateTime.Now < endTime1)   
         {
-        Console.WriteLine($"Breathe in..." ); 
-        ShowCountDown(5);
-        Console.WriteLine($"Now, Breathe out..." ); 
-        ShowCountDown(5);
-        }
-     
+            Console.WriteLine($"Breathe in..." ); 
+            ShowCountDown(5);
+            Console.WriteLine($"Now, Breathe out..." ); 
+            ShowCountDown(5);
+        }  
     }
 }

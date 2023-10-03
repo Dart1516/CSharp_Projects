@@ -34,11 +34,8 @@ public class Activity{
             }catch (FormatException)
             {
                 Console.WriteLine("This is not a number, Please enter a number.\n");
-                
             }    
-            
-        }while (númeroCorrecto == "no");
-        
+        }while (númeroCorrecto == "no");  
     }
     public void DisplayEndingMessage()
     {
@@ -51,7 +48,6 @@ public class Activity{
     }
     public void ShowSpinner(int WaitingSeconds)
     {   
-
         List<string> vueltaAnimada = new List<string>();
         vueltaAnimada.Add("|");
         vueltaAnimada.Add("/");
@@ -81,7 +77,6 @@ public class Activity{
             if (WaitingSeconds >= vueltaAnimada.Count) // SIN ESTO DARÁ ERROR
             {WaitingSeconds = 0;} // ESTO ES SUPER IMPORTANTE
         }
-
     }
     public void ShowCountDown(int contador)
     {
@@ -91,8 +86,5 @@ public class Activity{
             Thread.Sleep(1000);
             Console.Write($"\b\b  \b\b");
         }
-
     }
-
-
 }

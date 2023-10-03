@@ -3,11 +3,11 @@ public class ListingActivity : Activity
     private int _count;
     private List<string> _prompts = new List<string>()
     {
-    "When have you felt the Holy Ghost this month?",
-    "What have you done this month to strengthen your faith?",
-    "How did you show love to your family this month?",
-    "What steps have you taken this week to take care of your health?",
-    "What will be your goals for today?",
+        "When have you felt the Holy Ghost this month?",
+        "What have you done this month to strengthen your faith?",
+        "How did you show love to your family this month?",
+        "What steps have you taken this week to take care of your health?",
+        "What will be your goals for today?",
     };
 
     public ListingActivity(string ActivityName, string PersonalizedWelcomeMessage) : base(ActivityName, PersonalizedWelcomeMessage)
@@ -34,8 +34,6 @@ public class ListingActivity : Activity
             listaTemporal.Add($"{itemOnList}");
         }
         Console.WriteLine($"You listed {GetListFromUser(listaTemporal)} items ");
-
-
     }
     public string GetRandomPrompt()
     {
