@@ -1,6 +1,6 @@
 public class Journal 
 {
-    public string? _my_file;
+    public string _my_file;
     // public List<string>? _entries;
     public string _written_entry = "";
 
