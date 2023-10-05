@@ -1,4 +1,5 @@
-﻿string input = "0";
+﻿
+string input = "0";
     Console.WriteLine("Welcome to this Mindfulness Activity program");
         void Menu()
         {   
