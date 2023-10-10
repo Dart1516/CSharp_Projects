@@ -1,9 +1,10 @@
-using System;
+﻿// See https://aka.ms/new-console-template for more information
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello Develop05 World!");
-    }
-}
+    Console.WriteLine("Welcome to this Eternal Goal Program");
+
+    GoalManager g1 = new GoalManager();
+
+    g1.start();
+
+    // This program barely have the necessary to run :(    
+
