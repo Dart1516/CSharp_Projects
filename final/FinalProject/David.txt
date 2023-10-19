@@ -1,0 +1,10 @@
+-------------------- User Info --------------------
+Name: David
+Age: 34
+Weight: 113
+Height: 1.71
+IBM: 38.64436920761944
+IBM Status: Obesity (Grade 2)
+Fitness Goal: Lose Weight/Burn Fat
+Minutes of exercises per day: 2
+Minutes of exercises per day: 72000

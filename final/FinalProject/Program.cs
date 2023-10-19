@@ -1,9 +1,4 @@
-using System;
+﻿    Console.WriteLine("Welcome to this routine exercise Program");
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello FinalProject World!");
-    }
-}
+    MenuManager m1 = new MenuManager();
+    m1.introduction();
