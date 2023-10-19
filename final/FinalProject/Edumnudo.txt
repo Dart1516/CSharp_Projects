@@ -1,0 +1,10 @@
+-------------------- User Info --------------------
+Name: Edumnudo
+Age: 30
+Weight: 110
+Height: 1.82
+IBM: 33.20854969206617
+IBM Status: Obesity (Grade 1)
+Fitness Goal: Lose Weight/Burn Fat
+Minutes of exercises per day: 3600
+Minutes of exercises per day: 3600

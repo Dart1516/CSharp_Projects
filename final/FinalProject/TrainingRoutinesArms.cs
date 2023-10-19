@@ -1,6 +1,6 @@
 public class TrainingRoutinesArms: TrainingRoutines
 {
-    private string _difficulty;
+        private string _difficulty;
     public TrainingRoutinesArms(string difficulty, int duration) : base( difficulty, duration)
     {
         _difficulty = difficulty;
@@ -10,6 +10,7 @@ public class TrainingRoutinesArms: TrainingRoutines
     {
         Console.WriteLine($"\nWelcome to the This Arms exercises. \n");
         Console.WriteLine($"We will start by Chest exercise. \n");
+        
         Console.WriteLine($"Get ready..." );
         ShowCountDown(5);
         SelectChestExercise(_difficulty);
@@ -49,13 +50,13 @@ public class TrainingRoutinesArms: TrainingRoutines
         List<string> selectedExercises = new List<string>();
         switch (Dificultad)
         {
-            case "beginner":
+            case "Beginner":
                 selectedExercises.AddRange(new string[] { "Push-ups", "Dips", "Plank with Shoulder Taps", "Side Plank", "Close-Grip Push-ups" });
                 break;
-            case "intermediate":
+            case "Intermediate":
                 selectedExercises.AddRange(new string[] { "Diamond Push-ups", "Chest Squeeze (Pec Fly) with Resistance Band", "Banded Chest Press" });
                 break;
-            case "advanced":
+            case "Advanced":
                 selectedExercises.AddRange(new string[] { "Jumping Push-ups", "Knee-to-Chest Push-ups" });
                 break;
             default:

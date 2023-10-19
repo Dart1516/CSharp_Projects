@@ -109,7 +109,6 @@ public MenuManager()
 
         // Obtener los valores usando Split y Trim
         string UserName = lineas[1].Split(':')[1].Trim();
-        SetProfileName(UserName);
         string Age = lineas[2].Split(':')[1].Trim();
         string Weight = lineas[3].Split(':')[1].Trim();
         string Height = lineas[4].Split(':')[1].Trim();

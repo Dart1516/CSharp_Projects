@@ -3,7 +3,7 @@ public class TrainingRoutinesLegs: TrainingRoutines
     private string _difficulty;
     public TrainingRoutinesLegs(string difficulty, int duration) : base( difficulty, duration)
     {
-    _difficulty = difficulty;
+        _difficulty = difficulty;
     }
 
     public override void DisplayStartingMessage()
@@ -51,13 +51,13 @@ public class TrainingRoutinesLegs: TrainingRoutines
         List<string> selectedExercises = new List<string>();
         switch (Dificultad)
         {
-            case "beginner":
+            case "Beginner":
                 selectedExercises.AddRange(new string[] { "Standing Calf Raises", "Seated Calf Raises" });
                 break;
-            case "intermediate":
+            case "Intermediate":
                 selectedExercises.AddRange(new string[] { "Calf Raises on an Elevated Surface", "Calf Raises with Towel" });
                 break;
-            case "advanced":
+            case "Advanced":
                 selectedExercises.AddRange(new string[] { "Single-Leg Calf Raises", "Calf Raises with Jump", "Calf Raises with Resistance Band" });
                 break;
             default:

@@ -1,11 +1,9 @@
-using System.Security.Cryptography.X509Certificates;
-
 public class TrainingRoutinesBody: TrainingRoutines
 {
     private string _difficulty;
     public TrainingRoutinesBody(string difficulty, int duration) : base( difficulty, duration)
     {
-    _difficulty = difficulty;
+        _difficulty = difficulty;
     }
 
     public override void DisplayStartingMessage()
@@ -52,13 +50,13 @@ public class TrainingRoutinesBody: TrainingRoutines
         List<string> selectedExercises = new List<string>();
         switch (Dificultad)
         {
-            case "beginner":
+            case "Neginner":
                 selectedExercises.AddRange(new string[] { "Crunches", "Leg Raises", "Plank", "Bicycle Crunches" });
                 break;
-            case "intermediate":
+            case "Intermediate":
                 selectedExercises.AddRange(new string[] { "Mountain Climbers", "Flutter Kicks", "Reverse Crunches" });
                 break;
-            case "advanced":
+            case "Advanced":
                 selectedExercises.AddRange(new string[] { "Hollow Body Hold", "Dragon Flags", "V-Ups" });
                 break;
             default:

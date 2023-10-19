@@ -1,0 +1,10 @@
+-------------------- User Info --------------------
+Name: Edmundo
+Age: 26
+Weight: 110
+Height: 1.81
+IBM: 33.576508653582
+IBM Status: Obesity (Grade 1)
+Fitness Goal: Lose Weight/Burn Fat
+Minutes of exercises per day: 3600
+Minutes of exercises per day: 3600
