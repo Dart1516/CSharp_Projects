@@ -1,0 +1,10 @@
+-------------------- User Info --------------------
+Name: Danna
+Age: 10
+Weight: 30
+Height: 1.21
+IBM: 20.490403660952122
+IBM Status: Normal Weight
+Fitness Goal: Gain Weight/Muscle Mass
+Minutes of exercises per day: 3600
+Minutes of exercises per day: 3600
