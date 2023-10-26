@@ -1,6 +1,6 @@
 public class MenuManager 
 {
-    public string _profileName;
+    private string _profileName;
     private int _exerciseDurationSeconds;
     private double _BMI;
     private string _goal;
